@@ -95,23 +95,25 @@
     font-size: 16px !important; /* Smaller Title */
     font-weight: bold !important;
     color: var(--chat--color-white) !important;
-    line-height: 1
-    margin-bottom: 2px;
+    line-height: 1 !important;
+      margin-top: 0px !important;
+    margin-bottom: 2px !important;
 }
 
 .n8n-chat-widget .chat-header p {
     font-size: 8px !important; /* Smaller Subtitle */
     font-weight: normal !important;
     color: var(--chat--color-white) !important;
-     line-height: 1
-    margin-bottom: 2px;
+     line-height: 1 !important;
+    margin-top: 0px !important;
+    margin-bottom: 2px !important;
 }
 
 /* === Chat Messages Styling === */
 .n8n-chat-widget .message {
-    font-size: 14px !important; /* Decreased text size */
-    line-height: 1.4 !important; /* Improved readability */
-    padding: 8px !important;
+    font-size: 11px !important; /* Decreased text size */
+    line-height: 1.2 !important; /* Improved readability */
+    padding: 6px !important;
 }
 
 /* Bot Messages */
