@@ -107,7 +107,7 @@
 
 /* === Chat Header with Branding === */
 .chat-header {
-    background: var(--chat--gradient);
+    background: var(--chat--color-primary);
     color: var(--chat--color-white);
     padding: 14px;
     font-size: 16px;
