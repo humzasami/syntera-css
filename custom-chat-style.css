@@ -1,67 +1,95 @@
-/* Customize Chat Widget Container */
+/* General Chat Widget Styling */
 .n8n-chat-widget {
-    background-color: #ffffff !important;
+    background: linear-gradient(135deg, #2C0CE5 20%, #CE3084 100%) !important; /* Gradient Background */
     border-radius: 12px !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2) !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 /* Chat Header */
 .n8n-chat-widget .chat-header {
-    background-color: #2C0CE5 !important; /* Primary brand color */
+    background: transparent !important;
     color: #ffffff !important;
     font-weight: bold !important;
     text-align: center !important;
-    font-size: 16px !important;
-    padding: 12px !important;
+    font-size: 18px !important;
+    padding: 16px !important;
 }
 
 /* User Messages (Sent) */
 .n8n-chat-widget .message.user {
-    background-color: #2C0CE5 !important; /* Primary color */
+    background: linear-gradient(135deg, #2C0CE5, #CE3084) !important;
     color: #ffffff !important;
-    border-radius: 8px !important;
-    padding: 10px !important;
+    border-radius: 16px !important;
+    padding: 12px !important;
     max-width: 75% !important;
     text-align: left !important;
+    font-weight: 500 !important;
 }
 
 /* Bot Messages (Received) */
 .n8n-chat-widget .message.bot {
-    background-color: #CE3084 !important; /* Secondary color */
+    background-color: rgba(255, 255, 255, 0.1) !important;
     color: #ffffff !important;
-    border-radius: 8px !important;
-    padding: 10px !important;
+    border-radius: 16px !important;
+    padding: 12px !important;
     max-width: 75% !important;
     text-align: left !important;
+    font-weight: 400 !important;
 }
 
-/* Chat Input Field */
+/* Chat Input Box */
 .n8n-chat-widget .chat-input {
-    border: 2px solid #2C0CE5 !important;
-    border-radius: 6px !important;
-    padding: 8px !important;
+    border: 2px solid #CE3084 !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
     font-size: 14px !important;
-    background-color: #ffffff !important;
-    color: #333333 !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
 }
 
 /* Send Button */
 .n8n-chat-widget .chat-send-button {
-    background-color: #CE3084 !important;
+    background: linear-gradient(135deg, #CE3084, #2C0CE5) !important;
     color: #ffffff !important;
-    border-radius: 6px !important;
-    padding: 8px 16px !important;
+    border-radius: 8px !important;
+    padding: 10px 16px !important;
     font-weight: bold !important;
     transition: 0.3s ease-in-out !important;
 }
 
 /* Send Button Hover Effect */
 .n8n-chat-widget .chat-send-button:hover {
-    background-color: #2C0CE5 !important;
+    background: linear-gradient(135deg, #2C0CE5, #CE3084) !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Hide "Powered by n8n" */
-.n8n-chat-widget .powered-by, 
+/* Quick Reply Buttons */
+.n8n-chat-widget .quick-reply {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Quick Reply Hover */
+.n8n-chat-widget .quick-reply:hover {
+    background: #CE3084 !important;
+    color: #ffffff !important;
+}
+
+/* Sidebar & Buttons */
+.n8n-chat-widget .sidebar {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+}
+
+/* Remove "Powered by n8n" */
+.n8n-chat-widget .powered-by,
 .n8n-chat-widget footer {
     display: none !important;
     visibility: hidden !important;
