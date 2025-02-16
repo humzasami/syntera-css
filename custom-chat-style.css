@@ -24,6 +24,32 @@
     --chat--toggle--size: 60px;
 }
 
+
+/* === Apply Gradient Header Background === */
+.n8n-chat-widget .chat-header {
+    background: linear-gradient(135deg, #2C0CE5, #CE30B4) !important;
+    color: white !important;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+/* === Adjust Header Text Styling === */
+.n8n-chat-widget .chat-header h1 {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.n8n-chat-widget .chat-header p {
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: white !important;
+}
+
+
 /* === Floating Chat Button === */
 .chat-button {
     position: fixed;
