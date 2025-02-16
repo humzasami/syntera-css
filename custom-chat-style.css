@@ -83,8 +83,8 @@
 .n8n-chat-widget .chat-header {
     background: var(--chat--color-primary) !important;
     color: var(--chat--color-white) !important;
-    padding: 10px !important; /* Reduced height */
-    font-size: 16px !important;
+    padding: 7px !important; /* Reduced height */
+    font-size: 12px !important;
     font-weight: bold;
     text-align: center;
     border-radius: var(--chat--border-radius) var(--chat--border-radius) 0 0;
