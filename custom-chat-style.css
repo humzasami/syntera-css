@@ -81,7 +81,7 @@
 
 /* === Chat Header with Gradient Branding === */
 .n8n-chat-widget .chat-header {
-    background: var(--chat--gradient) !important;
+    background: var(--chat--color-primary) !important;
     color: var(--chat--color-white) !important;
     padding: 10px !important; /* Reduced height */
     font-size: 16px !important;
@@ -92,17 +92,17 @@
 
 /* === Adjust Header Text Styling === */
 .n8n-chat-widget .chat-header h1 {
-    font-size: 20px !important; /* Smaller Title */
+    font-size: 16px !important; /* Smaller Title */
     font-weight: bold !important;
     color: var(--chat--color-white) !important;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .n8n-chat-widget .chat-header p {
-    font-size: 12px !important; /* Smaller Subtitle */
+    font-size: 8px !important; /* Smaller Subtitle */
     font-weight: normal !important;
     color: var(--chat--color-white) !important;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 /* === Chat Messages Styling === */
