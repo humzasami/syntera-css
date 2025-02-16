@@ -24,32 +24,6 @@
     --chat--toggle--size: 60px;
 }
 
-
-/* === Apply Gradient Header Background === */
-.n8n-chat-widget .chat-header {
-    background: linear-gradient(135deg, #2C0CE5, #CE30B4) !important;
-    color: white !important;
-    padding: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 12px 12px 0 0;
-}
-
-/* === Adjust Header Text Styling === */
-.n8n-chat-widget .chat-header h1 {
-    font-size: 24px !important;
-    font-weight: bold !important;
-    color: white !important;
-}
-
-.n8n-chat-widget .chat-header p {
-    font-size: 14px !important;
-    font-weight: normal !important;
-    color: white !important;
-}
-
-
 /* === Floating Chat Button === */
 .chat-button {
     position: fixed;
@@ -105,44 +79,54 @@
     opacity: 1;
 }
 
-/* === Chat Header with Branding === */
-.chat-header {
-    background: var(--chat--color-primary);
-    color: var(--chat--color-white);
-    padding: 14px;
-    font-size: 16px;
-    text-align: center;
+/* === Chat Header with Gradient Branding === */
+.n8n-chat-widget .chat-header {
+    background: var(--chat--gradient) !important;
+    color: var(--chat--color-white) !important;
+    padding: 10px !important; /* Reduced height */
+    font-size: 16px !important;
     font-weight: bold;
-    position: relative;
+    text-align: center;
     border-radius: var(--chat--border-radius) var(--chat--border-radius) 0 0;
 }
 
-/* === Close Button === */
-.chat-close {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
+/* === Adjust Header Text Styling === */
+.n8n-chat-widget .chat-header h1 {
+    font-size: 20px !important; /* Smaller Title */
+    font-weight: bold !important;
+    color: var(--chat--color-white) !important;
+    margin-bottom: 5px;
 }
 
-/* === Chat Messages === */
+.n8n-chat-widget .chat-header p {
+    font-size: 12px !important; /* Smaller Subtitle */
+    font-weight: normal !important;
+    color: var(--chat--color-white) !important;
+    margin-bottom: 5px;
+}
+
+/* === Chat Messages Styling === */
+.n8n-chat-widget .message {
+    font-size: 14px !important; /* Decreased text size */
+    line-height: 1.4 !important; /* Improved readability */
+    padding: 8px !important;
+}
+
+/* Bot Messages */
 .n8n-chat-widget .message.bot {
     background: #F1E5F5 !important;
     color: var(--chat--color-dark) !important;
     border-radius: var(--chat--border-radius) !important;
-    padding: 10px !important;
+    padding: 8px !important;
     max-width: 75% !important;
 }
 
+/* User Messages */
 .n8n-chat-widget .message.user {
     background: var(--chat--gradient) !important;
     color: var(--chat--color-white) !important;
     border-radius: var(--chat--border-radius) !important;
-    padding: 10px !important;
+    padding: 8px !important;
     max-width: 75% !important;
 }
 
@@ -174,62 +158,11 @@
 }
 
 .chat-input button:hover {
-    background: var(-chat--color-primary);
+    background: var(--chat--color-primary);
 }
 
-/* === Hide "Powered by n8n" === */
+/* === Hide "Powered by n8n" Footer === */
 .n8n-chat-widget .powered-by,
 .n8n-chat-widget footer {
     display: none !important;
 }
-
-/* === Reduce Chat Header Height === */
-.n8n-chat-widget .chat-header {
-    background: linear-gradient(135deg, #2C0CE5, #CE30B4) !important;
-    color: white !important;
-    padding: 10px !important; /* Reduced padding */
-    font-size: 16px !important; /* Adjusted font size */
-    font-weight: bold;
-    text-align: center;
-    border-radius: 12px 12px 0 0;
-}
-
-/* Adjust Header Text Size */
-.n8n-chat-widget .chat-header h1 {
-    font-size: 20px !important; /* Smaller Title */
-    font-weight: bold !important;
-    color: white !important;
-    margin-bottom: 5px;
-}
-
-.n8n-chat-widget .chat-header p {
-    font-size: 12px !important; /* Smaller Subtitle */
-    font-weight: normal !important;
-    color: white !important;
-    margin-bottom: 5px;
-}
-
-/* === Reduce Chat Message Font Size === */
-.n8n-chat-widget .message {
-    font-size: 14px !important; /* Decreased text size for messages */
-    line-height: 1.4 !important; /* Adjust line spacing */
-    padding: 8px !important;
-}
-
-/* Adjust Bot & User Messages */
-.n8n-chat-widget .message.bot {
-    background: #F1E5F5 !important;
-    color: var(--chat--color-dark) !important;
-    border-radius: 8px !important;
-    padding: 8px !important;
-    font-size: 14px !important;
-}
-
-.n8n-chat-widget .message.user {
-    background: linear-gradient(135deg, #2C0CE5, #CE30B4) !important;
-    color: var(--chat--color-white) !important;
-    border-radius: 8px !important;
-    padding: 8px !important;
-    font-size: 14px !important;
-}
-
