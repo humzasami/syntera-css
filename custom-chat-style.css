@@ -137,7 +137,7 @@
 }
 
 .chat-input button {
-    background: var(--chat--gradient);
+    background: var(--chat--color-secondary);
     border: none;
     padding: 10px 14px;
     color: white;
@@ -148,7 +148,7 @@
 }
 
 .chat-input button:hover {
-    background: var(--chat--color-secondary-dark);
+    background: var(-chat--color-primary);
 }
 
 /* === Hide "Powered by n8n" === */
