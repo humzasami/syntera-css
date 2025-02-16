@@ -1,11 +1,66 @@
-/* === Chat Button (Floating Icon) === */
+:root {
+	/* Brand Colors */
+	--chat--color-primary: #2C0CE5; /* Primary Syntera Color */
+	--chat--color-primary-shade-50: #2411C8;
+	--chat--color-primary-shade-100: #1A0FAD;
+	--chat--color-secondary: #CE30B4; /* Secondary Syntera Color */
+	--chat--color-secondary-shade-50: #B22873;
+	--chat--color-white: #ffffff;
+	--chat--color-light: #F2F4F8;
+	--chat--color-dark: #101330;
+	--chat--color-disabled: #777980;
+	--chat--color-typing: #404040;
+
+	/* Layout & Spacing */
+	--chat--spacing: 12px;
+	--chat--border-radius: 12px;
+	--chat--transition-duration: 0.3s;
+
+	/* Chat Window Size */
+	--chat--window--width: 380px;
+	--chat--window--height: 520px;
+
+	/* Header */
+	--chat--header-height: auto;
+	--chat--header--padding: var(--chat--spacing);
+	--chat--header--background: var(--chat--color-primary);
+	--chat--header--color: var(--chat--color-white);
+	--chat--heading--font-size: 1.5rem;
+	--chat--subtitle--font-size: 1rem;
+	--chat--subtitle--line-height: 1.5;
+
+	/* Chat Messages */
+	--chat--message--font-size: 1rem;
+	--chat--message--padding: var(--chat--spacing);
+	--chat--message--border-radius: var(--chat--border-radius);
+	--chat--message-line-height: 1.6;
+	--chat--message--bot--background: #F1E5F5;
+	--chat--message--bot--color: var(--chat--color-dark);
+	--chat--message--user--background: var(--chat--gradient);
+	--chat--message--user--color: var(--chat--color-white);
+	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
+
+	/* Chat Input */
+	--chat--textarea--height: 50px;
+	--chat--textarea--border-radius: var(--chat--border-radius);
+	--chat--textarea--border: 1px solid var(--chat--color-primary);
+
+	/* Floating Chat Toggle Button */
+	--chat--toggle--background: var(--chat--color-secondary);
+	--chat--toggle--hover--background: var(--chat--color-secondary-shade-50);
+	--chat--toggle--active--background: var(--chat--color-primary);
+	--chat--toggle--color: var(--chat--color-white);
+	--chat--toggle--size: 60px;
+}
+
+/* === Floating Chat Button === */
 .chat-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #2C0CE5, #CE30B4);
+    width: var(--chat--toggle--size);
+    height: var(--chat--toggle--size);
+    background: var(--chat--toggle--background);
     border-radius: 50%;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -18,6 +73,7 @@
 }
 
 .chat-button:hover {
+    background: var(--chat--toggle--hover--background);
     box-shadow: 0px 4px 16px rgba(44, 12, 229, 0.4);
 }
 
@@ -26,15 +82,15 @@
     height: 28px;
 }
 
-/* === Chat Window (Hidden by Default) === */
+/* === Chat Window (Initially Hidden) === */
 .chat-modal {
     position: fixed;
     bottom: 90px;
     right: 20px;
-    width: 360px;
-    height: 500px;
-    background: #ffffff;
-    border-radius: 14px;
+    width: var(--chat--window--width);
+    height: var(--chat--window--height);
+    background: var(--chat--color-white);
+    border-radius: var(--chat--border-radius);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     display: none;
     flex-direction: column;
@@ -45,7 +101,7 @@
     z-index: 999;
 }
 
-/* === Show Chat Window When Open === */
+/* === Show Chat Window When Active === */
 .chat-modal.active {
     display: flex;
     transform: scale(1);
@@ -54,13 +110,13 @@
 
 /* === Chat Header === */
 .chat-header {
-    background: linear-gradient(135deg, #2C0CE5, #CE30B4);
-    color: white;
-    padding: 12px 15px;
-    font-weight: bold;
+    background: var(--chat--header--background);
+    color: var(--chat--header--color);
+    padding: var(--chat--header--padding);
+    font-size: var(--chat--heading--font-size);
     text-align: center;
     position: relative;
-    font-size: 16px;
+    font-weight: bold;
 }
 
 /* === Close Button === */
@@ -75,18 +131,18 @@
     cursor: pointer;
 }
 
-/* === Chat Content Area === */
+/* === Chat Content === */
 .chat-content {
     flex: 1;
     height: 100%;
-    padding: 10px;
+    padding: var(--chat--spacing);
     overflow-y: auto;
 }
 
-/* === Chat Input Field === */
+/* === Chat Input === */
 .chat-input {
     display: flex;
-    padding: 10px;
+    padding: var(--chat--spacing);
     background: #f8f8f8;
     border-top: 1px solid #ddd;
 }
@@ -94,30 +150,24 @@
 .chat-input input {
     flex: 1;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid var(--chat--color-primary);
+    border-radius: var(--chat--border-radius);
     font-size: 14px;
 }
 
 .chat-input button {
-    background: linear-gradient(135deg, #2C0CE5, #CE30B4);
+    background: var(--chat--gradient);
     border: none;
     padding: 8px 12px;
     color: white;
-    border-radius: 6px;
+    border-radius: var(--chat--border-radius);
     cursor: pointer;
     margin-left: 6px;
     transition: all 0.3s ease-in-out;
 }
 
 .chat-input button:hover {
-    background: linear-gradient(135deg, #1A0FAD, #B22873);
-}
-
-/* === Smooth Fade-In Effect === */
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+    background: var(--chat--color-secondary-shade-50);
 }
 
 /* === Hide "Powered by n8n" === */
