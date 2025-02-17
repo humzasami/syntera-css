@@ -16,35 +16,13 @@
     --chat--toggle--size: 64px;
 
     /* Chat Header */
-    --chat--header-height: 50px; /* Corrected */
-    --chat--header--padding: 10px; /* Adjusted */
+    --chat--header-height: 20px; /* Corrected */
+    --chat--header--padding: 1px; /* Adjusted */
     --chat--header--background: var(--chat--color-primary);
-    --chat--header--color: var(--chat--color-light);
-}
+    --chat--header--color: var(--chat--color-primary);
 
-/* === Floating Chat Button === */
-.chat-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: var(--chat--toggle--size);
-    height: var(--chat--toggle--size);
-    background: var(--chat--toggle--background) !important;
-    border-radius: 50%;
-    box-shadow: var(--chat--shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all var(--chat--transition-duration) ease-in-out;
-    z-index: 1000;
-    border: none;
-}
 
-.chat-button:hover {
-    background: var(--chat--toggle--hover--background) !important;
-    box-shadow: 0px 6px 18px rgba(206, 48, 180, 0.4) !important;
-}
+
 
 /* === Chat Header Styling === */
 .n8n-chat-widget .chat-header {
