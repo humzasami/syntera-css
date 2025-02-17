@@ -42,14 +42,14 @@
 	--chat--message--bot--background: var(--chat--color-white);
 	--chat--message--bot--color: var(--chat--color-dark);
 	--chat--message--bot--border: none;
-	--chat--message--user--background: var(--chat--color-secondary);
-	--chat--message--user--color: var(--chat--color-white);
+	--chat--message--user--background: #F6D6F1;
+	--chat--message--user--color: #000000;
 	--chat--message--user--border: none;
 	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
 
 	--chat--toggle--background: var(--chat--color-primary);
-	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
-	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
+	--chat--toggle--hover--background: var(--chat--color-primary);
+	--chat--toggle--active--background: var(--chat--color-secondary);
 	--chat--toggle--color: var(--chat--color-white);
 	--chat--toggle--size: 64px;
 }
