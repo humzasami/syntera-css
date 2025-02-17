@@ -10,7 +10,7 @@
 
     /* Chat Toggle Button */
     --chat--toggle--background: var(--chat--color-secondary); /* Secondary Brand Color */
-    --chat--toggle--hover--background: var(--chat--color-secondary-dark); /* Darker Secondary */
+    --chat--toggle--hover--background: var(--chat--color-primary); /* Darker Secondary */
     --chat--toggle--active--background: var(--chat--color-secondary); /* Secondary Brand Color */
     --chat--toggle--color: var(--chat--color-white); /* White Icon */
     --chat--toggle--size: 64px;
