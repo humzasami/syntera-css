@@ -5,8 +5,10 @@
     --chat--color-secondary: #CE30B4; /* Secondary Brand Color */
     --chat--color-secondary-dark: #CE30B4;
     --chat--color-white: #ffffff;
-    --chat--color-light: #F2F4F8;
-    --chat--color-dark: #101330;
+    --chat--color-light: #FBEFF9;
+    --chat--color-dark: #2C0CE5;
+    
+    --chat--message--user--background: #F3CDED;
 
     /* Chat Toggle Button */
     --chat--toggle--background: var(--chat--color-secondary); /* Set to Secondary */
@@ -16,7 +18,7 @@
     --chat--toggle--size: 64px;
 
     /* Chat Header */
-    --chat--header-height: 50px; /* Corrected */
+    --chat--header-height: auto; /* Corrected */
     --chat--header--padding: 30px; /* Adjusted */
     --chat--header--background: var(--chat--color-secondary);
     --chat--header--color: var(--chat--color-secondary);
