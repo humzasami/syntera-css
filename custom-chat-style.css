@@ -1,3 +1,4 @@
+/* === Syntera Branding & Custom Styles === */
 :root {
     --chat--color-primary: #2C0CE5; /* Primary Brand Color */
     --chat--color-primary-dark: #1A0FAD;
@@ -6,11 +7,13 @@
     --chat--color-white: #ffffff;
     --chat--color-light: #F2F4F8;
     --chat--color-dark: #101330;
-	--chat--toggle--background: #2C0CE5; /* Primary Brand Color */
-	--chat--toggle--hover--background: #CE30B4; /* Secondary Brand Color */
-	--chat--toggle--active--background: #2C0CE5; /* Primary Brand Color */
-	--chat--toggle--color: #CE30B4; /* Secondary Brand Color */
-	--chat--toggle--size: 64px;
+
+    /* Chat Toggle Button */
+    --chat--toggle--background: var(--chat--color-secondary); /* Secondary Brand Color */
+    --chat--toggle--hover--background: var(--chat--color-secondary-dark); /* Darker Secondary */
+    --chat--toggle--active--background: var(--chat--color-secondary); /* Secondary Brand Color */
+    --chat--toggle--color: var(--chat--color-white); /* White Icon */
+    --chat--toggle--size: 64px;
 
     /* Gradient */
     --chat--gradient: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
@@ -23,14 +26,7 @@
     /* Chat Window */
     --chat--window--width: 500px;
     --chat--window--height: 700px;
-
-    /* Chat Toggle Button */
-    --chat--toggle--size: 60px;
 }
-
-
-
-
 
 /* === Floating Chat Button === */
 .chat-button {
@@ -39,7 +35,7 @@
     right: 20px;
     width: var(--chat--toggle--size);
     height: var(--chat--toggle--size);
-    background: var(--chat--color-secondary);
+    background: var(--chat--toggle--background) !important;
     border-radius: 50%;
     box-shadow: var(--chat--shadow);
     display: flex;
@@ -52,7 +48,8 @@
 }
 
 .chat-button:hover {
-    box-shadow: 0px 6px 18px rgba(44, 12, 229, 0.4);
+    background: var(--chat--toggle--hover--background) !important;
+    box-shadow: 0px 6px 18px rgba(206, 48, 180, 0.4) !important;
 }
 
 /* === Floating Icon Inside Button === */
@@ -98,15 +95,13 @@
     border-radius: var(--chat--border-radius) var(--chat--border-radius) 0 0;
 }
 
-
-
 /* === Adjust Header Text Styling === */
 .n8n-chat-widget .chat-header h1 {
     font-size: 16px !important; /* Smaller Title */
     font-weight: bold !important;
     color: var(--chat--color-white) !important;
     line-height: 1 !important;
-      margin-top: 0px !important;
+    margin-top: 0px !important;
     margin-bottom: 2px !important;
 }
 
@@ -114,7 +109,7 @@
     font-size: 8px !important; /* Smaller Subtitle */
     font-weight: normal !important;
     color: var(--chat--color-white) !important;
-     line-height: 1 !important;
+    line-height: 1 !important;
     margin-top: 0px !important;
     margin-bottom: 2px !important;
 }
