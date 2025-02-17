@@ -22,7 +22,7 @@
 
 	--chat--header-height: auto;
 	--chat--header--padding: var(--chat--spacing);
-	--chat--header--background: linear-gradient(to bottom, #A99CFA, #F3C9EC);
+	--chat--header--background: #280BD7;
 
 	--chat--header--color: var(--chat--color-light);
 	--chat--header--border-top: none;
