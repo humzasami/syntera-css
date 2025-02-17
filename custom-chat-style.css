@@ -35,7 +35,7 @@
     right: 20px;
     width: var(--chat--toggle--size);
     height: var(--chat--toggle--size);
-    background: var(--chat--toggle--background) !important;
+    background: var(-chat--color-white) !important;
     border-radius: 50%;
     box-shadow: var(--chat--shadow);
     display: flex;
