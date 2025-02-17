@@ -18,8 +18,8 @@
     /* Chat Header */
     --chat--header-height: 20px; /* Corrected */
     --chat--header--padding: 10px; /* Adjusted */
-    --chat--header--background: var(--chat--color-primary);
-    --chat--header--color: var(--chat--color-primary);
+    --chat--header--background: var(--chat--color-secondary);
+    --chat--header--color: var(--chat--color-secondary);
 
 
 
