@@ -31,7 +31,7 @@
     right: 20px;
     width: var(--chat--toggle--size);
     height: var(--chat--toggle--size);
-    background: var(--chat--gradient);
+    background: var(--chat--color-primary);
     border-radius: 50%;
     box-shadow: var(--chat--shadow);
     display: flex;
@@ -89,6 +89,8 @@
     text-align: center;
     border-radius: var(--chat--border-radius) var(--chat--border-radius) 0 0;
 }
+
+
 
 /* === Adjust Header Text Styling === */
 .n8n-chat-widget .chat-header h1 {
