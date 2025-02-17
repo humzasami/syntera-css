@@ -7,8 +7,11 @@
     --chat--color-white: #ffffff;
     --chat--color-light: #F2F4F8;
     --chat--color-dark: #101330;
---chat--toggle--background: var(--chat--color-secondary) !important;
-    --chat--toggle--hover--background: var(--chat--color-secondary-dark) !important;
+	--chat--toggle--background: #2C0CE5; /* Primary Brand Color */
+	--chat--toggle--hover--background: #CE30B4; /* Secondary Brand Color */
+	--chat--toggle--active--background: #2C0CE5; /* Primary Brand Color */
+	--chat--toggle--color: #CE30B4; /* Secondary Brand Color */
+	--chat--toggle--size: 64px;
 
     /* Gradient */
     --chat--gradient: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
