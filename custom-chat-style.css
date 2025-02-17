@@ -15,7 +15,10 @@
 	--chat--toggle--size: 64px;
 
 
-
+--chat--header-height: 2;
+	--chat--header--padding: var(--chat--spacing);
+	--chat--header--background: var(--chat--color-primary);
+	--chat--header--color: var(--chat--color-light);
 
     
 
