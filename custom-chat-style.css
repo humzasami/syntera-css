@@ -21,7 +21,7 @@
     --chat--header--background: var(--chat--color-secondary);
     --chat--header--color: var(--chat--color-secondary);
 
-
+    --chat--message--user--background: #F3CDED;
 
 
 /* === Chat Header Styling === */
