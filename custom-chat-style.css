@@ -7,6 +7,8 @@
     --chat--color-white: #ffffff;
     --chat--color-light: #F2F4F8;
     --chat--color-dark: #101330;
+--chat--toggle--background: var(--chat--color-secondary) !important;
+    --chat--toggle--hover--background: var(--chat--color-secondary-dark) !important;
 
     /* Gradient */
     --chat--gradient: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
@@ -25,14 +27,8 @@
 }
 
 
-{
-	--chat--toggle--background: var(--chat--color-primary);
-	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
-	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
-	--chat--toggle--color: var(--chat--color-white);
-	--chat--toggle--size: 64px;
 
-}
+
 
 /* === Floating Chat Button === */
 .chat-button {
