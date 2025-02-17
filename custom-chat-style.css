@@ -1,28 +1,29 @@
-/* === Syntera Branding & Custom Styles === */
 :root {
-    --chat--color-primary: #2C0CE5; /* Primary Brand Color */
-    --chat--color-primary-dark: #2C0CE5;
-    --chat--color-secondary: #CE30B4; /* Secondary Brand Color */
-    --chat--color-secondary-dark: #CE30B4;
-    --chat--color-white: #ffffff;
-    --chat--color-light: #FBEFF9;
-    --chat--color-dark: #2C0CE5;
-    
-    --chat--message--user--background: #F3CDED;
+	--chat--color-primary: #2C0CE5;
+	--chat--color-primary-shade-50: #db4061;
+	--chat--color-primary-shade-100: #cf3c5c;
+	--chat--color-secondary: #CE30B4;
+	--chat--color-secondary-shade-50: #1ca08a;
+	--chat--color-white: #ffffff;
+	--chat--color-light: #f2f4f8;
+	--chat--color-light-shade-50: #e6e9f1;
+	--chat--color-light-shade-100: #c2c5cc;
+	--chat--color-medium: #d2d4d9;
+	--chat--color-dark: #101330;
+	--chat--color-disabled: #777980;
+	--chat--color-typing: #404040;
 
-    /* Chat Toggle Button */
-    --chat--toggle--background: var(--chat--color-secondary); /* Set to Secondary */
-    --chat--toggle--hover--background: var(--chat--color-primary);
-    --chat--toggle--active--background: var(--chat--color-primary);
-    --chat--toggle--color: var(--chat--color-white);
-    --chat--toggle--size: 64px;
+	--chat--spacing: 1rem;
+	--chat--border-radius: 0.25rem;
+	--chat--transition-duration: 0.15s;
 
-    /* Chat Header */
+	--chat--window--width: 400px;
+	--chat--window--height: 600px;
 
 	--chat--header-height: auto;
 	--chat--header--padding: var(--chat--spacing);
 	--chat--header--background: var(--chat--color-dark);
-	--chat--header--color: linear-gradient(to right, #2C0CE5, #CE30B4);
+	--chat--header--color: var(--chat--color-light);
 	--chat--header--border-top: none;
 	--chat--header--border-bottom: none;
 	--chat--header--border-bottom: none;
@@ -34,17 +35,21 @@
 
 	--chat--textarea--height: 50px;
 
+	--chat--message--font-size: 1rem;
+	--chat--message--padding: var(--chat--spacing);
+	--chat--message--border-radius: var(--chat--border-radius);
+	--chat--message-line-height: 1.8;
+	--chat--message--bot--background: var(--chat--color-white);
+	--chat--message--bot--color: var(--chat--color-dark);
+	--chat--message--bot--border: none;
+	--chat--message--user--background: var(--chat--color-secondary);
+	--chat--message--user--color: var(--chat--color-white);
+	--chat--message--user--border: none;
+	--chat--message--pre--background: rgba(0, 0, 0, 0.05);
 
-/* === Chat Header Styling === */
-.n8n-chat-widget .chat-header {
-    background: var(--chat--header--background) !important;
-    color: var(--chat--header--color) !important;
-    padding: var(--chat--header--padding) !important;
-    height: var(--chat--header-height) !important;
-}
-
-/* === Hide "Powered by n8n" Footer === */
-.n8n-chat-widget .powered-by,
-.n8n-chat-widget footer {
-    display: none !important;
+	--chat--toggle--background: var(--chat--color-primary);
+	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
+	--chat--toggle--color: var(--chat--color-white);
+	--chat--toggle--size: 64px;
 }
