@@ -1,26 +1,58 @@
 /* === Syntera Branding & Custom Styles === */
 :root {
     --chat--color-primary: #2C0CE5; /* Primary Brand Color */
-    --chat--color-primary-dark: #1A0FAD;
+    --chat--color-primary-dark: #2C0CE5;
     --chat--color-secondary: #CE30B4; /* Secondary Brand Color */
-    --chat--color-secondary-dark: #B22873;
+    --chat--color-secondary-dark: #CE30B4;
     --chat--color-white: #ffffff;
     --chat--color-light: #F2F4F8;
     --chat--color-dark: #101330;
 
-	--chat--toggle--background: var(--chat--color-primary);
-	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
-	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
-	--chat--toggle--color: var(--chat--color-white);
-	--chat--toggle--size: 64px;
+    /* Chat Toggle Button */
+    --chat--toggle--background: var(--chat--color-secondary); /* Set to Secondary */
+    --chat--toggle--hover--background: var(--chat--color-secondary-dark);
+    --chat--toggle--active--background: var(--chat--color-secondary);
+    --chat--toggle--color: var(--chat--color-white);
+    --chat--toggle--size: 64px;
 
+    /* Chat Header */
+    --chat--header-height: 50px; /* Corrected */
+    --chat--header--padding: 10px; /* Adjusted */
+    --chat--header--background: var(--chat--color-primary);
+    --chat--header--color: var(--chat--color-light);
+}
 
---chat--header-height: 2;
-	--chat--header--padding: var(--chat--spacing);
-	--chat--header--background: var(--chat--color-primary);
-	--chat--header--color: var(--chat--color-light);
+/* === Floating Chat Button === */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: var(--chat--toggle--size);
+    height: var(--chat--toggle--size);
+    background: var(--chat--toggle--background) !important;
+    border-radius: 50%;
+    box-shadow: var(--chat--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all var(--chat--transition-duration) ease-in-out;
+    z-index: 1000;
+    border: none;
+}
 
-    
+.chat-button:hover {
+    background: var(--chat--toggle--hover--background) !important;
+    box-shadow: 0px 6px 18px rgba(206, 48, 180, 0.4) !important;
+}
+
+/* === Chat Header Styling === */
+.n8n-chat-widget .chat-header {
+    background: var(--chat--header--background) !important;
+    color: var(--chat--header--color) !important;
+    padding: var(--chat--header--padding) !important;
+    height: var(--chat--header-height) !important;
+}
 
 /* === Hide "Powered by n8n" Footer === */
 .n8n-chat-widget .powered-by,
