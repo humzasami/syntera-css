@@ -10,14 +10,14 @@
 
     /* Chat Toggle Button */
     --chat--toggle--background: var(--chat--color-secondary); /* Set to Secondary */
-    --chat--toggle--hover--background: var(--chat--color-secondary-dark);
-    --chat--toggle--active--background: var(--chat--color-secondary);
+    --chat--toggle--hover--background: var(--chat--color-primary);
+    --chat--toggle--active--background: var(--chat--color-primary);
     --chat--toggle--color: var(--chat--color-white);
     --chat--toggle--size: 64px;
 
     /* Chat Header */
     --chat--header-height: 20px; /* Corrected */
-    --chat--header--padding: 1px; /* Adjusted */
+    --chat--header--padding: 10px; /* Adjusted */
     --chat--header--background: var(--chat--color-primary);
     --chat--header--color: var(--chat--color-primary);
 
