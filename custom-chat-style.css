@@ -60,6 +60,20 @@
     --chat--toggle--size: 64px;
 
 
+	.chat-window-wrapper .chat-window-toggle {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    width: var(--chat--toggle--size) !important;
+    height: var(--chat--toggle--size) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important; /* Keep it circular */
+}
+
+
+
 
 	
 
